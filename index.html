@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZENITH AI | Najlepsza Automatyzacja Gier</title>
+    <meta name="description" content="Zenith AI - zaawansowane skrypty automatyzujące rozgrywkę. Natychmiastowa dostawa, płatności PayPal, Crypto, PSC i BLIK.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Space+Grotesk:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://www.paypal.com/sdk/js?client-id=Acyst_2A6_YExbMs3NAweWttSeW9oxXYYCvAnjsItu_IixvRFdrmLS76zPcKIcb0x2bGX01WRcDIRYFf&currency=PLN"></script>
+</head>
+<body>
+    <div class="glow-bg"></div>
+    
+    <nav>
+        <div class="container">
+            <div class="logo">
+                <img src="logo.png" alt="ZENITH AI" style="height: 50px; width: auto;">
+            </div>
+            <ul>
+                <li><a href="#products">Produkty</a></li>
+                <li><a href="#payments">Płatności</a></li>
+                <li><a href="#support">Wsparcie</a></li>
+            </ul>
+            <div class="nav-cta">
+                <a href="#products" class="btn btn-secondary">Sklep</a>
+            </div>
+        </div>
+    </nav>
+
+    <header>
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="reveal">Dominuj w grze z <br><span>ZENITH AI</span></h1>
+                <p class="lead">Zautomatyzowane skrypty, które grają za Ciebie. Najwyższa precyzja, niewykrywalność i natychmiastowa przewaga nad przeciwnikiem.</p>
+                <div class="hero-btns">
+                    <a href="#products" class="btn btn-primary">Przeglądaj pliki</a>
+                    <a href="#payments" class="btn btn-outline">Metody płatności</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="products" class="products">
+        <div class="container">
+            <div class="section-header">
+                <h2>Nasze Pliki</h2>
+                <p>Wszystkie pliki są regularnie aktualizowane i sprawdzane.</p>
+            </div>
+            <div class="product-grid" id="productGrid">
+                <!-- Products will be injected by JS -->
+            </div>
+        </div>
+    </section>
+
+    <section id="payments" class="features">
+        <div class="container">
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="icon">💳</div>
+                    <h3>PayPal</h3>
+                    <p>Szybkie i bezpieczne płatności kartą lub saldem.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon">₿</div>
+                    <h3>Kryptowaluty</h3>
+                    <p>Anonimowe płatności BTC oraz LTC z niskimi prowizjami.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="icon">🎟️</div>
+                    <h3>Paysafecard</h3>
+                    <p>Płać gotówką za pomocą kodów ze sklepu.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="logo.png" alt="ZENITH AI" style="height: 40px; width: auto; opacity: 0.8;">
+                </div>
+                <p>&copy; 2026 ZENITH AI Automation. Wszelkie prawa zastrzeżone.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Payment Modal -->
+    <div id="paymentModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-header">
+                <h3>Wybierz metodę płatności</h3>
+                <p id="modalProductName">Produkt: ZIP File</p>
+            </div>
+            <div class="payment-methods">
+                <button class="pay-btn" data-method="paypal">
+                    <img src="https://www.paypalobjects.com/webstatic/mktg/logo/pp_cc_mark_37x23.jpg" alt="PayPal">
+                    <span>PayPal</span>
+                </button>
+                <button class="pay-btn" data-method="crypto">
+                    <div class="method-icon crypto">₿</div>
+                    <span>BTC / LTC</span>
+                </button>
+                <button class="pay-btn" data-method="psc">
+                    <div class="method-icon psc">P</div>
+                    <span>Paysafecard</span>
+                </button>
+            </div>
+            <div id="paymentStatus" class="payment-status">
+                <!-- Transaction details will appear here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
