@@ -258,7 +258,7 @@ function completePayment(info) {
                 <div style="font-size: 0.8rem; color: #8b5cf6;">TWÓJ KLUCZ:</div>
                 <div style="font-family: monospace; font-size: 1.2rem; font-weight: 700; color: white;">${key}</div>
             </div>
-            <a href="zenith_ai.zip" class="btn btn-primary" style="width: 100%;" download>Pobierz .zip</a>
+            <a href="https://mega.nz/file/1FNgUL7B#nxx8iEZ4T46lCWjIGRNdM1XkFMGWdliAw7qgvlxRHOE" target="_blank" class="btn btn-primary" style="width: 100%;">Pobierz z Mega.nz</a>
         </div>
     `;
 }
